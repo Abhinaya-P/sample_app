@@ -1,0 +1,309 @@
+    1  rm /usr/local/bin/subl
+    2  ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+    3  subl 
+    4  subl ~/.gemrc
+    5  sudo subl ~/.gemrc
+    6  vim ~/.gemrc
+    7  gem install rails -v 3.2.3
+    8  rails -v
+    9  pwd
+   10  mkdir rails_projects
+   11  cd rails_projects/
+   12  rails new first_app
+   13  gem install rdoc-data
+   14  subl first_app
+   15  cd first_app/
+   16  subl Gemfile
+   17  bundle install
+   18  ould not find gem 'jquery-rails (= 2.0.0)' in any of the gem sources listed in
+   19  your Gemfile or available on this machine.
+   20  sh-3.2# 
+   21  rails server
+   22  rails server
+   23  bundle install
+   24  rails server
+   25  pwd
+   26  cd ..
+   27  cd demo_app/
+   28  rails generate scaffold Microposts content:string user_id:integer 
+   29  buncle exec rake db:migrate
+   30  bundle exec rake db:migrate
+   31  rails console
+   32  git add .
+   33  git commit -m "Finish demo_app"
+   34  git push
+   35  git remote add origin https://github.com/Abhinaya-P/demo_app.git
+   36  git push -u origin master
+   37  cd ..
+   38  mkdir sample_app
+   39  cd sample_app/
+   40  rails new sample_app --skip-test-unit
+   41  subl .
+   42  bundle install
+   43  pwd
+   44  ls
+   45  cd sample_app/
+   46  ls
+   47  bundle install
+   48  bundle install
+   49  gem install pg -v '0.12.2'
+   50  bundle install --without production
+   51  rails generate rspec:install
+   52  gem install scs
+   53  gem install sass
+   54  git init
+   55  git add .
+   56  git commit -m "Initial commit"
+   57  git git mv README.rdoc README.md
+   58  git mv README.rdoc README.md
+   59  ls *.md
+   60  subl README.md
+   61  git commit -a -m "Improve README"
+   62  git remote add origin https://github.com/Abhinaya-P/sample_app.git
+   63  git push -u origin master
+   64  pwd
+   65  subl .
+   66  git checkout -b static_pages
+   67  rails generate rspec:install
+   68  rails generate controller StaticPages home help --no-test-framework
+   69  git add .
+   70  git commit -a -m "Add a static pages controller"
+   71  rails generate integration_test static_pages
+   72  bundle exec rspec spec/requests/static_pages_spec.rb
+   73  bundle exec rspec spec/requests/static_pages_spec.rb
+   74  bundle exec rspec spec/requests/static_pages_spec.rb
+   75  bundle exec rspec spec/requests/static_pages_spec.rb
+   76  git branch
+   77  bundle exec rspec spec/requests/static_pages_spec.rb
+   78  bundle exec rspec spec/requests/static_pages_spec.rb
+   79  bundle exec rspec spec/requests/static_pages_spec.rb
+   80  bundle exec rspec spec/requests/static_pages_spec.rb
+   81  bundle exec rspec spec/requests/static_pages_spec.rb
+   82  bundle exec rspec spec/requests/static_pages_spec.rb
+   83  bundle exec rspec spec/requests/static_pages_spec.rb
+   84  bundle exec rspec spec/requests/static_pages_spec.rb
+   85  subl /app/views/static_pages/about.html.erb
+   86  cd app
+   87  cd views/
+   88  cd static_pages/
+   89  subl about.html.erb
+   90  sudo subl about.html.erb
+   91  touch about.html.erb
+   92  chmod 777 about.html.erb
+   93  subl about.html.erb 
+   94  pwd
+   95  ls
+   96  bundle exec rspec spec/requests/static_pages_spec.rb
+   97  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+   98  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+   99  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  100  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  101  bundle exec rspec spec/requests/static_pages_spec.rb
+  102  pwd
+  103  cd ..
+  104  cd ../../
+  105  pwd
+  106  bundle exec rspec spec/requests/static_pages_spec.rb
+  107  mv app/views/layouts/application.html.erb foobar
+  108  bundle exec rspec spec/requests/static_pages_spec.rb
+  109  bundle exec rspec spec/requests/static_pages_spec.rb
+  110  bundle exec rspec spec/requests/static_pages_spec.rb
+  111  bundle exec rspec spec/requests/static_pages_spec.rb
+  112  bundle exec rspec spec/requests/static_pages_spec.rb
+  113  bundle exec rspec spec/requests/static_pages_spec.rb
+  114  bundle exec rspec spec/requests/static_pages_spec.rb
+  115  mv foobar app/views/layouts/application.html.erb
+  116  bundle exec rspec spec/requests/static_pages_spec.rb
+  117  mv foobar app/views/layouts/application.html.erb
+  118  bundle exec rspec spec/requests/static_pages_spec.rb
+  119  bundle exec rspec spec/requests/static_pages_spec.rb
+  120  bundle exec rspec spec/requests/static_pages_spec.rb
+  121  bundle exec rspec spec/requests/static_pages_spec.rb
+  122  git add .
+  123  git commit -m "Finish static pages"
+  124  git checkout master
+  125  git branch
+  126  git merge static_pages
+  127  git push
+  128  git push -u origin master
+  129  git checkout -b "contact page"
+  130  git checkout -b "contact_page"
+  131  git branch
+  132  git checkout master
+  133  git branch -d contact_page
+  134  git checkout static_pages
+  135  cd /app/views/static_pages
+  136  pwd
+  137  cd app
+  138  cd views/
+  139  cd static_pages/
+  140  ls
+  141  touch contact.html.erb
+  142  chmod 777 contact.html.erb
+  143  ls -l
+  144  cd ..
+  145  cd..
+  146  pwd
+  147  cd ../..
+  148  pwd
+  149  cd ..
+  150  chmod -R 777 sample_app
+  151  cd sample_app/
+  152  bundle exec rspec spec/requests/static_pages_spec.rb 
+  153  git checkout master
+  154  git checkout static_pages
+  155  git status
+  156  git add .
+  157  git status
+  158  git commit -m "Finish Contact page"
+  159  git checkout master
+  160  git merge static_pages
+  161  rvm get head && rvm reload
+  162  chmod +x $rvm path/hooks/after cd bundler
+  163  chmod +x $rvm path/hooks/after cd bundler
+  164  git branch
+  165  git checkout static_pages
+  166  git status
+  167  git status
+  168  bundle exec rspec spec/requests/static_pages_spec.rb 
+  169  bundle exec rspec spec/requests/static_pages_spec.rb 
+  170  bundle exec rspec spec/requests/static_pages_spec.rb 
+  171  bundle exec rspec spec/requests/static_pages_spec.rb 
+  172  bundle exec rspec spec/requests/static_pages_spec.rb 
+  173  rails c
+  174  git add .
+  175  git commit -m "Add a full_title helper"
+  176  git checkout -b filling-in-fast
+  177  bundle install
+  178  cd apps
+  179  cd app
+  180  cd assets/
+  181  cd stylesheets/
+  182  touch custom.css.sass
+  183  chmod 777 custom.css.sass 
+  184  mv custom.css.sass custom.css.scss
+  185  cd -
+  186  cd ../..
+  187  pwd
+  188  ls -l
+  189  chmod 777.
+  190  chmod 777 .
+  191  ls -l
+  192  cd app
+  193  ls
+  194  cd assets/
+  195  ls
+  196  cd ..
+  197  cd ..
+  198  ls
+  199  cd app
+  200  ls
+  201  cd helpers/
+  202  cd ..
+  203  cd views/
+  204  cd layouts/
+  205  ls
+  206  touch _shim.html.erb
+  207  touch _header.html.erb
+  208  chmod 777 .
+  209  ls -l
+  210  chmod 777 _header.html.erb
+  211  chmod 777 _shim.html.erb
+  212  touch _footer.html.erb
+  213  chmod 777 _footer.html.erb
+  214  bundle exec rspec spec/requests/static pages spec.rb
+  215  cd ../..
+  216  pwd
+  217  cd ..
+  218  bundle exec rspec spec/requests/static pages spec.rb
+  219  pwd
+  220  sudo bundle exec rspec spec/requests/static pages spec.rb
+  221  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  222  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  223  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  224  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  225  clear
+  226  clear
+  227  pwd
+  228  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  229  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  230  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  231  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  232  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  233  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  234  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  235  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  236  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  237  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  238  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  239  sudo git rm public/index.html
+  240  ls
+  241  cd public/
+  242  ls
+  243  cd ../..
+  244  pwd
+  245  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  246  cd sample_app/
+  247  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  248  sudo bundle exec rspec spec/requests/static_pages_spec.rb
+  249  rails generate controller Users new --no-test-framework
+  250  rails generate integration_test user_pages
+  251  sudo bundle exec rspec spec/requests/user_pages_spec.rb
+  252* 
+  253  sudo bundle exec rspec spec/requests/user_pages_spec.rb
+  254  ls -l spec/requests/user_pages_spec.rb
+  255  chmod 777 spec/requests/user_pages_spec.rb
+  256  sudo bundle exec rspec spec/requests/user_pages_spec.rb
+  257  sudo bundle exec rspec spec/requests/user_pages_spec.rb
+  258  bundle exec rake spec
+  259  rake db:migrate
+  260  bundle exec rspec spec/
+  261  bundle exec rspec spec/
+  262  git branch
+  263  git add .
+  264  git commit -m "Finish layout and routes"
+  265  git checkout master
+  266  git push
+  267  git push -u
+  268  git branch
+  269  git merge filling-in-fast
+  270  git push -u
+  271  git push -u 
+  272  git branch
+  273  git checkout -n modelling-users
+  274  git checkout -b modelling-users
+  275  rails generate model User name:string email:string
+  276  bundle exec rake db:migrate
+  277  bundle install
+  278  bundle exec annotate --position before
+  279  rails console --sandbox
+  280  clear
+  281  bundle exec rspec spec/
+  282  User.all
+  283  rails conosle
+  284  rails c
+  285  bundle exec rake db:test:prepare
+  286  bundle exec rspec spec/
+  287  bundle exec rspec spec/
+  288  rails console --sandbox
+  289  bundle exec rspec spec/
+  290  rails c
+  291  bundle exec rspec spec/
+  292  bundle exec rspec spec/
+  293* 
+  294  bundle exec rspec spec/
+  295  irb
+  296  bundle exec rspec spec/
+  297  bundle exec rspec spec/
+  298  bundle exec rspec spec/
+  299  pwd
+  300  bundle exec rspec spec/
+  301  bundle exec rspec spec/
+  302  bundle exec rspec spec/
+  303  bundle exec rspec spec/
+  304  bundle exec rspec spec/
+  305  bundle exec rspec spec/
+  306  bundle exec rspec spec/
+  307  rails generate migration add_index_to_users_email
+  308  bundle exec rake db:migrate
+  309  history > commands.txt
