@@ -18,7 +18,15 @@ describe "User" do
   	@user.should respond_to(:name)
   end
 
+  it { @user.should respond_to(:admin)}
+  it { @user.should_not be_admin}
   it { @user.should respond_to(:authenticate) }
+
+  describe "with admin attribute set to 'true'" do 
+      before { @user.toggle!(:admin) }
+      it { @user.should be_admin }
+    end
+
 
   it "should repsond to email attribute " do
   	@user.should respond_to(:email)
