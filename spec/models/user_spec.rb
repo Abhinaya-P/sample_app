@@ -23,6 +23,12 @@ describe "User" do
   it { @user.should respond_to(:authenticate) }
   it { @user.should respond_to(:microposts)}
   it { @user.should respond_to(:feed)}
+  it { @user.should respond_to(:relationships) }
+  it { @user.should respond_to(:followed_users) }
+  it { @user.should respond_to(:follow!) }
+  it { @user.should respond_to(:unfollow!) }
+  it { @user.should respond_to(:reverse_relationships) } 
+  it { @user.should respond_to(:followers) }
 
   describe "with admin attribute set to 'true'" do 
       before { @user.toggle!(:admin) }
@@ -87,16 +93,43 @@ describe "User" do
       end
 
       describe "status" do
+        let(:followed_user) { FactoryGirl.create(:user)}
         let(:unfollowed_post) do
             FactoryGirl.create(:micropost, user: FactoryGirl.create(:user))
         end
+        before { @user.follow!(followed_user) 
+          3.times { followed_user.microposts.create!(content: "Lorem Ipsum")}
+        }
         it { @user.feed.should include(newer_micropost) } 
         it { @user.feed.should include(older_micropost) } 
         it { @user.feed.should_not include(unfollowed_post) }
+        it { followed_user.microposts.each do | mp | 
+             @user.feed.should include(mp)
+           end
+           }
       end
   end
 
+   describe "following" do
+        let(:other_user) { FactoryGirl.create(:user) } 
+        before do
+              @user.save
+              @user.follow!(other_user) 
+        end
+        it { @user.should be_following(other_user) }
+        it { @user.followed_users.should include(other_user) } 
+        describe "followed user" do
+            it { other_user.followers.should include(@user) }
+        end
 
+        describe "and unfollowing" do
+            before { @user.unfollow!(other_user) }
+           it { @user.should_not be_following(other_user) }
+           it { @user.followed_users.should_not include(other_user) } 
+        end
+
+        
+  end
 
 
 

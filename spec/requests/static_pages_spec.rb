@@ -13,6 +13,20 @@ describe "Static pages" do
        	 page.should have_selector('title', 
        	 									:text => "Ruby on Rails Tutorial Sample App | Home")
        	end
+
+        describe "following/followers" do
+         let(:user) { FactoryGirl.create(:user)}
+         let(:other_user) { FactoryGirl.create(:user)}
+
+         before {
+          other_user.follow!(user)
+           sign_in user
+           visit root_path
+         }
+         it { page.should have_link("0 following", href: following_user_path(user)) }
+         it { page.should have_link("1 follower", href: followers_user_path(user)) }
+
+         end
     end
     describe "Help page" do	
     	it "should have the content 'Help'" do	
